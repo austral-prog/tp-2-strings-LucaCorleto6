@@ -25,6 +25,14 @@ def ficha():
     #   - Las 3 notas, su suma, promedio y promedio entero
     #   - Cierre decorativo usando repetición de string ("=" * 24)
     pass
+
+    # - Inputs
+    nombre_completo = input().lower()
+    email = input().lower()
+    nota1 = int(input())
+    nota2 = int(input())
+    nota3 = int(input())
+
     # - Funciones
 
     nombre_limpio = nombre_completo.strip().title()
@@ -56,4 +64,3 @@ def ficha():
     print(f"Promedio: {float(promedio)}")
     print(f"Promedio entero: {int(promedio)}")
     print("=" * 24)
-
