@@ -3,7 +3,7 @@ def check_vowels():
     sin distinguir mayúsculas de minúsculas.
     """
     pass
-    
+
     nombre = input().lower()
     print(f"Contiene a: {'a' in nombre}")
     print(f"Contiene e: {'e' in nombre}")
