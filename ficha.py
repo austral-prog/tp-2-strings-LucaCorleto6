@@ -25,13 +25,6 @@ def ficha():
     #   - Las 3 notas, su suma, promedio y promedio entero
     #   - Cierre decorativo usando repetición de string ("=" * 24)
     pass
-    # - Inputs
-    nombre_completo = input().lower()
-    email = input().lower()
-    nota1 = int(input())
-    nota2 = int(input())
-    nota3 = int(input())
-
     # - Funciones
 
     nombre_limpio = nombre_completo.strip().title()
@@ -51,10 +44,10 @@ def ficha():
     print(f"Caracteres en nombre: {len(nombre_limpio)}")
     print(f"Iniciales: {nombre_limpio[0]}{nombre_limpio[(espacio_nombre + 1)]}")
     print(f"Usuario: {apellido.lower()}.{solo_nombre.lower()}")
-    print(f"Email valido: {"@" in email}")
+    print(f"Email valido: {'@' in email}")
     print(f"Dominio: {dominio}")
-    print(f"Nombre para archivo: {nombre_limpio.replace(" ","_")}")
-    print(f"Cantidad de a: {nombre_limpio.count("a")}")
+    print(f"Nombre para archivo: {nombre_limpio.replace(' ','_')}")
+    print(f"Cantidad de a: {nombre_limpio.count('a')}")
     print(f"Codigo secreto: {nombre_limpio[::-1].upper()}")
     print(f"Nota 1: {nota1}")
     print(f"Nota 2: {nota2}")
